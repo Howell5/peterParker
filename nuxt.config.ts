@@ -1,12 +1,10 @@
 export default defineNuxtConfig({
-  extends: [
-    '@nuxt/ui-pro'
-  ],
-  modules: [
-    '@nuxt/ui',
-  ],
+  modules: ['@nuxt/ui'],
   ui: {
-    icons: ['heroicons', 'simple-icons']
+    icons: ['heroicons', 'simple-icons'],
+  },
+  devServer: {
+    port: 4999,
   },
   devtools: { enabled: true },
 })
